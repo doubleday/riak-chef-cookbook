@@ -55,6 +55,7 @@ else
     end
 
     package "riak" do
+      version "#{version_str}.#{node['riak']['package']['version']['incremental']}"
       action :install
     end
 
